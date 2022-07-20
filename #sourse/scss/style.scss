@@ -1,0 +1,21 @@
+// Reset browser styles
+@import "nullstyle.scss";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+/* ---Technical classes----------------------------------------------------------- */
+._container{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/* ------------------------------------------------------------------------------- */
+
+
+
+
+
