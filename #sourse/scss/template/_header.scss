@@ -1,4 +1,52 @@
-body{
-    padding: 50px;
-    color: red;
+/*---Header------------------------------------------------------------------------*/
+.header {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: Inter;
+    text-transform: uppercase;
+    background-color: #AC947D;
+    &__container {
+    }
+    &__top {
+    }
+    &__middle {
+    }
+    &__bottom {
+    }
 }
+.top-header {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    &__simple-menu {
+        flex: 0 1 607px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text {
+        flex: 0 1 373px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__number {
+        flex: 0 1 839px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.simple-menu {
+    &__list {
+        display: flex;
+    }
+    &__link {
+    }
+    &__link:not(:first-child) {
+        margin: 0px 0px 0px 28px;
+    }
+}
+.middle-header {
+}
+.bottom-header {
+}
+

@@ -1,4 +1,6 @@
-/*Reset browser styles*/
+/* ---Fonts----------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+/* ---Reset browser styles--------------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -70,12 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/* ------------------------------------------------------------------------------- */
-body {
-  padding: 50px;
-  color: red;
-}
-
+/* ---Wrapper & Container---------------------------------------------------------------------------- */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -83,11 +80,45 @@ body {
   overflow: hidden;
 }
 
-/* ---Technical classes----------------------------------------------------------- */
 ._container {
-  max-width: 1470px;
+  max-width: 1790px;
   margin: 0 auto;
   padding: 0px 15px;
 }
 
-/* ------------------------------------------------------------------------------- */
+/*---Header------------------------------------------------------------------------*/
+.header {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: Inter;
+  text-transform: uppercase;
+  background-color: #AC947D;
+}
+.top-header {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.top-header__simple-menu {
+  flex: 0 1 607px;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-header__text {
+  flex: 0 1 373px;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-header__number {
+  flex: 0 1 839px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.simple-menu__list {
+  display: flex;
+}
+.simple-menu__link:not(:first-child) {
+  margin: 0px 0px 0px 28px;
+}

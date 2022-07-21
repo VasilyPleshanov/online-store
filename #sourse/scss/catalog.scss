@@ -1,22 +1,11 @@
+// Fonts
+@import "fonts.scss";
 // Reset browser styles
 @import "nullstyle.scss";
+// Wrapper & Container
+@import "template/_wrapper.scss";
+// Header
 @import "template/_header.scss";
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    overflow: hidden;
-}
-/* ---Technical classes----------------------------------------------------------- */
-._container{
-    max-width: 1470px;
-    margin: 0 auto;
-    padding: 0px 15px;
-}
-/* ------------------------------------------------------------------------------- */
-
-
 
 
 
