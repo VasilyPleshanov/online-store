@@ -1,6 +1,6 @@
-/* ---Fonts----------------------------------------------------------------------- */
+/* --- Fonts ----------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jaldi&display=swap");
-/* ---Reset browser styles--------------------------------------------------------- */
+/* --- Reset browser styles --------------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -81,17 +81,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ._container {
-  max-width: 1790px;
+  max-width: 1814px;
   margin: 0 auto;
   padding: 0px 15px;
 }
 
-/*---Header------------------------------------------------------------------------*/
+/*--- Header ------------------------------------------------------------------------*/
 .header {
   color: #fff;
   font-size: 10px;
   font-weight: 600;
-  font-family: Inter;
+  font-family: "Inter";
   text-transform: uppercase;
 }
 .top-header {
@@ -104,26 +104,31 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 .top-header__simple-menu {
-  flex: 0 1 608px;
-  display: flex;
-  justify-content: flex-end;
+  flex: 0 1 599px;
 }
 .top-header__text {
-  flex: 0 0 233px;
+  flex: 0 1 586px;
   display: flex;
   justify-content: center;
 }
 .top-header__number {
-  flex: 0 1 608px;
+  flex: 0 1 599px;
   display: flex;
   justify-content: flex-end;
 }
 
+.simple-menu {
+  display: flex;
+  justify-content: flex-end;
+}
 .simple-menu__list {
   display: flex;
 }
-.simple-menu__link:not(:first-child) {
+.simple-menu__item:not(:first-child) {
   margin: 0px 0px 0px 28px;
+}
+.simple-menu__link {
+  color: #fff;
 }
 
 .middle-header {
@@ -133,16 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .middle-header__man-woman {
   flex: 0 1 200px;
-}
-.middle-header__man-woman a {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #111111;
-}
-.middle-header__man-woman a:not(:last-child) {
-  margin: 0px 21px 0px 0px;
 }
 .middle-header__logo p {
   color: #AC947D;
@@ -161,6 +156,17 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
+.man-woman a {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.man-woman a:not(:last-child) {
+  margin: 0px 21px 0px 0px;
+}
+
 .navbar-header {
   display: flex;
   align-items: flex-end;
@@ -170,3 +176,25 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-header__icon:not(:last-child) {
   margin: 0px 25px 0px 0px;
 }
+
+.bottom-header {
+  height: 52px;
+}
+.menu-header__list {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.menu-header__item:not(:last-child) {
+  margin: 0px 55px 0px 0px;
+}
+.menu-header__link {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+/*--- Slider ------------------------------------------------------------------------*/

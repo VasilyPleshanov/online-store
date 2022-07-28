@@ -1,105 +1,131 @@
-/*---Header------------------------------------------------------------------------*/
+/*--- Header ------------------------------------------------------------------------*/
 .header {
-    color: #fff;
-    font-size: 10px;
-    font-weight: 600;
-    font-family: Inter;
-    text-transform: uppercase;
-    &__container {
-    }
-    &__top {
-    }
-    &__middle {
-    }
-    &__bottom {
-    }
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'Inter';
+  text-transform: uppercase;
+  &__container {
+  }
+  &__top {
+  }
+  &__middle {
+  }
+  &__bottom {
+  }
 }
 .top-header {
-    background-color: #AC947D;
-    &__container {
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__simple-menu {
-        flex: 0 1 608px;
-        display: flex;
-        justify-content: flex-end;
-    }
-    &__text {
-        flex: 0 0 233px;
-        display: flex;
-        justify-content: center;
-    }
-    &__number {
-        flex: 0 1 608px;
-        display: flex;
-        justify-content: flex-end;
-    }
-}
-.simple-menu {
-    &__list {
-        display: flex;
-    }
-    &__link {
-    }
-    &__link:not(:first-child) {
-        margin: 0px 0px 0px 28px;
-    }
-}
-.middle-header {
-    padding: 14px 0px;
-    display: flex;
-    justify-content: space-between;
-    &__man-woman {
-        flex: 0 1 200px;
-        & a {
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 16px;
-            text-transform: uppercase;
-            color: #111111;
-        }
-        & a:not(:last-child) {
-            margin: 0px 21px 0px 0px;
-        }
-    }
-    &__logo {
-        & p {
-            color: #AC947D;
-            font-family: 'Jaldi';
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 84px;
-            text-transform: uppercase;
-        }
-    }
-    &__navbar {
-        flex: 0 1 200px;
-        justify-content: flex-end;
-    }
-}
-.man-woman {
+  background-color: #AC947D;
+  &__container {
+    height: 35px;
     display: flex;
     align-items: center;
-    &__man {
+    justify-content: space-between;
+  }
+  &__simple-menu {  
+    flex: 0 1 599px; 
+  }
+  &__text {
+    flex: 0 1 586px;
+    display: flex;
+    justify-content: center;
+  }
+  &__number {
+    flex: 0 1 599px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.simple-menu {
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    display: flex;
+  }
+  &__item {
+  }
+  &__item:not(:first-child) {
+    margin: 0px 0px 0px 28px;
+  }
+  &__link{
+    color:#fff;
+  }
+}
+.middle-header {
+  padding: 14px 0px;
+  display: flex;
+  justify-content: space-between;
+  &__man-woman {
+    flex: 0 1 200px;
+  }
+  &__logo {
+    & p {
+      color: #AC947D;
+      font-family: 'Jaldi';
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 84px;
+      text-transform: uppercase;
     }
-    &__woman {
-    }
+  }
+  &__navbar {
+    flex: 0 1 200px;
+    justify-content: flex-end;
+  }
+}
+.man-woman {
+  display: flex;
+  align-items: center;
+  &__man {
+  }
+  &__woman {
+  }
+  & a {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #111111;
+  }
+  & a:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+  }
 }
 .navbar-header {
+  display: flex;
+  align-items: flex-end;
+  height: 38px;
+  padding: 17px 0px 0px 0px;
+  &__icon {
+  }
+  &__icon:not(:last-child) {
+    margin: 0px 25px 0px 0px;
+  }
+}
+.bottom-header {
+  height: 52px;
+  &__menu {
+  }
+}
+.menu-header {
+  &__list {
     display: flex;
-    align-items: flex-end;
-    height: 38px;
-    padding: 17px 0px 0px 0px;
-    &__icon {
-    }
-    &__icon:not(:last-child) {
-        margin: 0px 25px 0px 0px;
-    }
+    align-items: start;
+    justify-content: center;
+  }
+  &__item {
+  }
+  &__item:not(:last-child) {
+    margin: 0px 55px 0px 0px;
+  }
+  &__link {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #111111;
+  }
 }
 
-.bottom-header {
-}
 
