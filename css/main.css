@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 .top-header {
-  background-color: #AC947D;
+  background-color: #ac947d;
 }
 .top-header__container {
   height: 35px;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 1 200px;
 }
 .middle-header__logo p {
-  color: #AC947D;
+  color: #ac947d;
   font-family: "Jaldi";
   font-weight: 400;
   font-size: 50px;
@@ -197,4 +197,120 @@ h1, h2, h3, h4, h5, h6 {
   color: #111111;
 }
 
+/* PC */
+@media (max-width: 1400px) {
+  .menu-header__link {
+    font-size: 10px;
+  }
+}
 /*--- Slider ------------------------------------------------------------------------*/
+.slider {
+  max-width: 100%;
+  margin: auto;
+}
+.slider__body {
+  position: relative;
+}
+.slider__item {
+  position: relative;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slider__link {
+  position: absolute;
+  display: block;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  top: 80%;
+  left: 5.57%;
+  padding: 1.04% 7.08%;
+  background-color: #000;
+}
+.slider__link_lookbook {
+  padding: 0.86% 4.16%;
+  top: 55.4%;
+  left: 33.1%;
+  background-color: #ac937d;
+}
+.slider__image {
+  width: 100%;
+}
+.slider__nav {
+  position: absolute;
+  top: 8.57%;
+  left: 5.26%;
+}
+
+.nav-slider {
+  width: 15.62%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-slider__counter {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #000000;
+}
+/* PC */
+@media (max-width: 1400px) {
+  .slider__link {
+    font-size: 18px;
+  }
+  .slider__link_lookbook {
+    padding: 0.86% 2.08%;
+  }
+}
+/* LAPTOP */
+@media (max-width: 1087px) {
+  .slider__link {
+    font-size: 16px;
+  }
+}
+/* TABLET */
+@media (max-width: 991.98px) {
+  .slider__link {
+    position: absolute;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .slider__link_lookbook {
+    padding: 1.5% 4.16%;
+    top: 65%;
+    left: 5%;
+    background-color: #ac937d;
+  }
+  .nav-slider {
+    display: none;
+  }
+}
+/* MOBILE */
+@media (max-width: 767.98px) {
+  .slider__link {
+    display: none;
+  }
+}
+/* MOBILE SMALL*/
