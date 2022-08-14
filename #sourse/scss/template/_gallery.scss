@@ -1,0 +1,47 @@
+/*--- Small-slider ------------------------------------------------------------------------*/
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+.btn-prev {
+}
+.btn-next {
+}
+
+.gallery {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  display: grid;
+  grid-template-columns: 55px 1fr 55px;
+  grid-template-rows: 504px;
+  align-items: center;
+  &__btn {
+    &_prev {
+    }
+
+    &_next {
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+    padding: 0px 10px;
+  }
+
+  &__list {
+    display: flex;
+    transition: all ease 500ms;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 26.75px;
+  }
+}
