@@ -6,28 +6,21 @@
   font-family: "Inter";
   text-transform: uppercase;
   &__container {
-    max-width: 1814px;
+    max-width: 1847px;
     margin: 0 auto;
     padding: 0px 15px;
-  }
-  &__top {
-  }
-  &__middle {
-  }
-  &__bottom {
   }
 }
 .top-header {
   background-color: #ac947d;
   &__container {
-    max-width: 1814px;
-    margin: 0 auto;
-    padding: 0px 15px;
-
-    height: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1847px;
+    margin: 0 auto;
+    height: 35px;
+    padding: 0px 15px;
   }
   &__simple-menu {
     flex: 0 1 599px;
@@ -52,8 +45,6 @@
   &__list {
     display: flex;
   }
-  &__item {
-  }
   &__item:not(:first-child) {
     margin: 0px 0px 0px 28px;
   }
@@ -62,9 +53,9 @@
   }
 }
 .middle-header {
-  padding: 14px 0px;
   display: flex;
   justify-content: space-between;
+  padding: 14px 0px;
   &__man-woman {
     flex: 0 1 200px;
   }
@@ -86,10 +77,6 @@
 .man-woman {
   display: flex;
   align-items: center;
-  &__man {
-  }
-  &__woman {
-  }
   & a {
     font-weight: 600;
     font-size: 13px;
@@ -104,26 +91,25 @@
 .navbar-header {
   display: flex;
   align-items: flex-end;
-  height: 38px;
+  height: 39px;
   padding: 17px 0px 0px 0px;
   &__icon {
+    display: flex;
+    align-items: center;
+    height: 22px;
   }
   &__icon:not(:last-child) {
     margin: 0px 25px 0px 0px;
   }
 }
 .bottom-header {
-  height: 52px;
-  &__menu {
-  }
+  margin: 0px 0px 39px 0px;
 }
 .menu-header {
   &__list {
     display: flex;
     align-items: start;
     justify-content: center;
-  }
-  &__item {
   }
   &__item:not(:last-child) {
     margin: 0px 55px 0px 0px;
