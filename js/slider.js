@@ -1,56 +1,62 @@
-const next = document.querySelector('.nav-slider__next');
-const prev = document.querySelector('.nav-slider__prev');
+slider();
 
-let counter = document.querySelector('.nav-slider__counter');
+function slider() {
+  const next = document.querySelector('.nav-slider__next');
+  const prev = document.querySelector('.nav-slider__prev');
 
-let slideIndex = 1;
+  let counter = document.querySelector('.nav-slider__counter');
 
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
+  let slideIndex = 1;
 
-function autoNextSlide() {
-  return setInterval(nextSlide, 10000);
-}
-autoNextSlide();
+  next.addEventListener('click', nextSlide);
+  prev.addEventListener('click', prevSlide);
 
-function updateCounter() {
-  counter.innerText = `${slideIndex}/2`;
-}
+  function autoNextSlide() {
+    return setInterval(nextSlide, 10000);
+  }
+  autoNextSlide();
 
-function nextSlide() {
-  slideIndex += 1;
+  function updateCounter() {
+    counter.innerText = `${slideIndex}/2`;
+  }
+
+  function nextSlide() {
+    slideIndex += 1;
+    showSlides(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex -= 1;
+    showSlides(slideIndex);
+  }
+
   showSlides(slideIndex);
+
+  function showSlides(n) {
+    let slides = document.querySelectorAll('.slider__item');
+    let dots = document.querySelectorAll('.dots-slider__dot');
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (let slide of slides) {
+      slide.classList.add('hide');
+    }
+    
+    slides[slideIndex - 1].classList.remove('hide');
+
+    for (let dot of dots) {
+      dot.classList.remove('active');
+    }
+
+    dots[slideIndex - 1].classList.add('active');
+
+    updateCounter();
+  }
 }
 
-function prevSlide() {
-  slideIndex -= 1;
-  showSlides(slideIndex);
-}
 
-showSlides(slideIndex);
-
-function showSlides(n) {
-  let slides = document.querySelectorAll('.slider__item');
-  let dots = document.querySelectorAll('.dots-slider__dot');
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (let slide of slides) {
-    slide.classList.add('hide');
-  }
-  
-  slides[slideIndex - 1].classList.remove('hide');
-
-  for (let dot of dots) {
-    dot.classList.remove('active');
-  }
-
-  dots[slideIndex - 1].classList.add('active');
-
-  updateCounter();
-}
