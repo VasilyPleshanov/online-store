@@ -44,6 +44,7 @@ body {
 }
 /*--- Slider ------------------------------------------------------------------------*/
 .slider {
+  height: 41.9vw;
   max-width: 100%;
   margin: 0px 0px 110px 0px;
 
@@ -86,7 +87,7 @@ body {
     color: #fff;
     font-family: "Inter";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.2;
     background-color: #000;
 
@@ -94,6 +95,7 @@ body {
       top: 55.4%;
       left: 33.1%;
       padding: 0.86% 4.16%;
+      font-size: 20px;
       background-color: #ac937d;
     }
   }
@@ -136,13 +138,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  // display: none;
 
   &__dot {
     display: block;
     height: 5px;
     width: 150px;
     cursor: pointer;
+    border-radius: 2px;
     background-color: #bbb;
     transition: background-color 0.6s ease;
   }
@@ -160,7 +162,6 @@ body {
 /* PC */
 @media (max-width: 1400px) {
   .slider {
-
     &__link {
       font-size: 18px;
 
@@ -174,7 +175,6 @@ body {
 /* LAPTOP */
 @media (max-width: 1087px) {
   .slider {
-
     &__link {
       font-size: 16px;
     }
@@ -184,6 +184,17 @@ body {
 /* TABLET */
 @media (max-width: 991.98px) {
   .slider {
+    height: 41.9vw;
+
+    &__body {
+      position: relative;
+    }
+
+    &__item {
+      position: absolute;
+
+      // width: 100%;
+    }
 
     &__link {
       position: absolute;
@@ -206,7 +217,6 @@ body {
 /* MOBILE */
 @media (max-width: 767.98px) {
   .slider {
-
     &__link {
       display: none;
     }
