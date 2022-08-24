@@ -69,6 +69,7 @@ function slider(){
   function sliderMobile(){
     let viewport = document.querySelector('.slider__body').offsetWidth;
     let slides = document.querySelectorAll('.slider__item');
+    const sliderBody = document.querySelector('.slider__body');
     let slider = [];
 
     for (let i = 0; i < slides.length; i++) {
@@ -80,11 +81,11 @@ function slider(){
     let step = 0;
     let offset = 0;
 
-    function draw(){
+    function drawLeft(){
       let div = slider[step];
       div.style.width = viewport + 'px';
       div.style.left = offset * viewport + 'px';
-      document.querySelector('.slider__body').appendChild(div);
+      sliderBody.appendChild(div);
 
       if (step + 1 == slider.length) {
         step = 0;
@@ -97,7 +98,7 @@ function slider(){
     }
 
     function left(){
-      document.onclick = null;
+      // document.onclick = null;
       let slides2 = document.querySelectorAll('.slider__item');
       let offset2 = 0;
       for (let i = 0; i < slides2.length; i++) {
@@ -106,14 +107,76 @@ function slider(){
       }
       setTimeout(function() {
         slides2[0].remove();
-        draw();
-        document.onclick = left;
+        drawLeft();
+        // document.onclick = left;
       }, 1000)
     }
 
-    draw();draw();
-    document.onclick = left;
+    // function drawRight(){
+    //   let div = slider[step];
+    //   div.style.width = viewport + 'px';
+    //   div.style.right = offset * viewport + 'px';
+    //   sliderBody.appendChild(div);
 
+    //   if (step + 1 == slider.length) {
+    //     step = 0;
+    //   }
+    //   else {
+    //     step++;
+    //   }
+
+    //   offset = 1;
+    // }
+
+    // function right(){
+    //   // document.onclick = null;
+    //   let slides2 = document.querySelectorAll('.slider__item');
+    //   let offset2 = 0;
+    //   for (let i = 0; i < slides2.length; i++) {
+    //     slides2[i].style.right = offset2 * viewport - viewport + 'px';
+    //     offset2++;
+    //   }
+    //   setTimeout(function() {
+    //     slides2[0].remove();
+    //     drawRight();
+    //     // document.onclick = left;
+    //   }, 1000)
+    // }
+
+    drawLeft();drawLeft();
+
+    // Swipe
+    sliderBody.addEventListener('touchstart', handleTouchStart, false);
+    sliderBody.addEventListener('touchmove', handleTouchMove, false);
+
+    let y1 = null;
+
+    function handleTouchStart(event) {
+      const firstTouch = event.touches[0];
+      y1 = firstTouch.clientY;
+      console.log(y1)
+    }
+
+    function handleTouchMove(event) {
+      if (!y1) {
+        return false;
+      }
+      let y2 = event.touches[0].clientY;
+
+      let yDiff = y2 - y1;
+
+      if (yDiff > 0) {
+        left();
+      } else {
+        false;
+      }
+      // else right();
+
+      y1 = null;
+      // y2 = null;
+
+      console.log(y2);
+    }
   }
 }
 
