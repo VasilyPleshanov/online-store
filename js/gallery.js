@@ -7,7 +7,6 @@ function gallery() {
   let width;
 
   function init() {
-    console.log('resize');
     width = document.querySelector('.gallery__body').offsetWidth;
     if (width < 850) {
       sliderLine.style.width = width * items.length / 2 + 'px';
@@ -16,7 +15,6 @@ function gallery() {
     } else {
       sliderLine.style.width = width * items.length / 4 + 'px';
     }
-    console.log(width);
     
     items.forEach(item => {
 
@@ -30,7 +28,6 @@ function gallery() {
       
       item.style.height = 'auto';
     })
-    console.log(width);
     rollSlider();
   }
 
@@ -43,7 +40,6 @@ function gallery() {
       count = items.length - 4;
     }
     rollSlider();
-    console.log(count);
   })
 
   document.querySelector('.gallery__btn_next').addEventListener('click', function() {
@@ -52,7 +48,6 @@ function gallery() {
       count = 0;
     }
     rollSlider();
-    console.log(count);
   })
 
   function rollSlider() {

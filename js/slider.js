@@ -9,6 +9,9 @@ function slider() {
   const sliderBody = document.querySelector('.slider__body');
   
   let index = 0;
+  let timer;
+
+  let lol;
 
   const activeSlide = n => {
     for (slide of slides) {
@@ -38,6 +41,7 @@ function slider() {
   prepareCurrentSlide(index);
 
   const nextSlide = () => {
+    interval();
     if (index == slides.length - 1) {
       index = 0;
       prepareCurrentSlide(index);
@@ -48,6 +52,7 @@ function slider() {
   }
 
   const prevSlide = () => {
+    interval();
     if (index == 0) {
       index = slides.length - 1;
       prepareCurrentSlide(index);
@@ -67,33 +72,50 @@ function slider() {
   next.addEventListener('click', nextSlide);
   prev.addEventListener('click', prevSlide);
 
-  setInterval(nextSlide, 5000);
-
   // Swipe
   sliderBody.addEventListener('touchstart', handleTouchStart, false);
   sliderBody.addEventListener('touchmove', handleTouchMove, false);
 
-  let x1 = null;
+  let xDown = null;
 
-  function handleTouchStart(event) {
-    const firstTouch = event.touches[0];
-    x1 = firstTouch.clientX;
+  function getTouches(evt) {
+  return evt.touches
+  };
+
+  function handleTouchStart(evt) {
+    interval();
+  const firstTouch = getTouches(evt)[0];
+  xDown = firstTouch.clientX;
+  };
+
+  function handleTouchMove(evt) {
+    interval();
+  if ( ! xDown ) {
+  return;
   }
 
-  function handleTouchMove(event) {
-    if (!x1) {
-      return false;
-    }
-    let x2 = event.touches[0].clientX;
+  let xUp = evt.touches[0].clientX;
 
-    let xDiff = x2 - x1;
+  let xDiff = xDown - xUp;
 
-    if (xDiff > 0) {
-      prevSlide();
+  ( xDiff > 0 ) ? prevSlide() : nextSlide();
+
+  xDown = null;
+  }
+
+// Auto next
+  const interval = () => {
+    
+    if (lol == 1) {
+      timer = clearInterval(timer);
+      lol = 0;
+      interval();
     } else {
-      nextSlide();
+      timer = setInterval(nextSlide, 7000);
+      lol = 1;
     }
-
-    x1 = null;
   }
+
+  interval();
+
 }

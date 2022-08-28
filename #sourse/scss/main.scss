@@ -157,8 +157,7 @@ body {
     margin: 0px 20px 0px 0px;
   }
 
-  &__dot:hover,
-  .active {
+  &__dot.active {
     background-color: #717171;
   }
 }
