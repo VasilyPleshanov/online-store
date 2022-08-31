@@ -1,39 +1,17 @@
-/*--- Small-slider ------------------------------------------------------------------------*/
-.btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  margin: 0px 5px;
-}
-.btn-prev {
-}
-.btn-next {
-}
-
 .gallery {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
   display: grid;
-  grid-template-columns: 55px 1fr 55px;
-  grid-template-rows: 504px;
+  grid-template-columns: 45px 1fr 45px;
+  grid-template-rows: 524px;
   align-items: center;
-  &__btn {
-    &_prev {
-    }
-
-    &_next {
-    }
-  }
 
   &__body {
+    margin: 0px 10px;
     overflow: hidden;
-    padding: 0px 10px;
   }
 
   &__list {
     display: flex;
+    margin: 10px 0px;
     transition: all ease 500ms;
   }
 
@@ -41,7 +19,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 0px 26.75px;
   }
+}
+
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }

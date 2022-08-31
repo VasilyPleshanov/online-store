@@ -1,13 +1,38 @@
-/* ---Wrapper & Container---------------------------------------------------------------------------- */
+body {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 }
-// /* ---Technical classes----------------------------------------------------------- */
 ._container {
   max-width: 1686px;
   padding: 0px 15px;
   margin: 0 auto;
+}
+._title {
+  position: relative;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 0.8;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    width: 45px;
+    height: 3px;
+    background-color: #ac937d;
+    transform: translate(-50%, 0%);
+  }
 }

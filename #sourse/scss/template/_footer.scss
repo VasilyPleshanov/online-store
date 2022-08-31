@@ -1,0 +1,61 @@
+.footer {
+  padding: 54px 0px 76px 0px;
+  color: #fff;
+  background-color: #000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__info {
+    display: flex;
+    margin: 0px 0px 49px 0px;
+
+    & li {
+      text-transform: uppercase;
+    }
+
+    & li:not(:last-child) {
+      margin: 0px 28px 0px 0px;
+    }
+  }
+
+  &__label {
+  }
+
+  &__title {
+    margin: 0px 0px 49px 0px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+
+  &__icon {
+  }
+
+  &__tel {
+    display: flex;
+    margin: 0px 0px 49px 0px;
+
+    & p:not(:last-child) {
+      margin: 0px 32px 0px 0px;
+    }
+  }
+
+  &__email {
+    display: flex;
+    justify-content: end;
+  }
+}

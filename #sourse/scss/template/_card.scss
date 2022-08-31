@@ -1,22 +1,30 @@
-/*--- Card ------------------------------------------------------------------------*/
+$color_1: #fff;
+$color_2: #ac937d;
+
 .card {
+  position: relative;
   width: 333px;
   max-height: 504px;
-  position: relative;
+  cursor: pointer;
+  transition: all ease 400ms;
+
+  &:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
   &__stickers {
-    display: flex;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
 
     & p {
       display: block;
-
-      color: #fff;
-      font-size: 18px;
       padding: 2px 6px;
+      color: $color_1;
+      font-size: 18px;
       font-weight: 400;
-      background-color: #ac937d;
+      background-color: $color_2;
     }
     & p:not(:last-child) {
       margin: 0px 4px 0px 0px;
@@ -31,26 +39,22 @@
   }
 
   &__discount {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 5px;
-    letter-spacing: 0.05em;
-    background-color: #ac937d;
-
-    font-size: 13px;
-    line-height: 130%;
-
     position: absolute;
-    // top: 333px;
     top: 66.07%;
     right: 0;
+    padding: 5px;
+    color: $color_1;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    background-color: $color_2;
   }
 
   &__text {
+    margin: 0px 0px 30px 0px;
     font-size: 20px;
     font-weight: 500;
-    margin: 0px 0px 30px 0px;
     & span {
       text-transform: uppercase;
     }
@@ -62,9 +66,9 @@
   }
 
   &__price-actual {
+    margin: 0px 18px 0px 0px;
     font-weight: 400;
     font-size: 23px;
-    margin: 0px 18px 0px 0px;
   }
 
   &__price-old {
