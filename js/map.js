@@ -28,7 +28,16 @@ function init() {
 
   let placemark2 = new ymaps.Placemark(
     [55.791749068949976,37.748618499999985],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -39,7 +48,16 @@ function init() {
 
   let placemark3 = new ymaps.Placemark(
 	[55.80626206892763,37.400683000000015],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -50,7 +68,16 @@ function init() {
 
   let placemark4 = new ymaps.Placemark(
 	[55.7534380689707,37.61229949999997],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -61,7 +88,16 @@ function init() {
 
   let placemark5 = new ymaps.Placemark(
 	[55.752362604558925,37.59861799999993],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -72,7 +108,16 @@ function init() {
 
   let placemark6 = new ymaps.Placemark(
 	[55.65933001732281,37.75751069080731],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -83,7 +128,16 @@ function init() {
 
   let placemark7 = new ymaps.Placemark(
 	[55.694540069057716,37.49802449999997],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -94,7 +148,16 @@ function init() {
 
   let placemark8 = new ymaps.Placemark(
 	[55.780319568950354,37.63209799999998],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -105,7 +168,16 @@ function init() {
 
   let placemark9 = new ymaps.Placemark(
 	[55.70640106902855,37.45397099999989],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",
@@ -116,7 +188,16 @@ function init() {
 
   let placemark10 = new ymaps.Placemark(
 	[55.0762283474496,36.62365883746065],
-    {},
+    {
+      balloonContent: `
+			<div class="balloon">
+				<div class="balloon__address">17-й проезд Марьиной Рощи, 4к1</div>
+				<div class="balloon__info">
+					<p>9 мин. от метро Бутырская</p>
+				</div>
+			</div>
+		`
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "img/contacts/mark.png",

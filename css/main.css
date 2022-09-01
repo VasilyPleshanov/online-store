@@ -748,3 +748,14 @@ body {
 [class*=ground-pane] {
   filter: grayscale(0.7);
 }
+
+.contacts {
+  margin: 0px 0px 191px 0px;
+}
+.contacts__title {
+  margin: 0px 0px 87px 0px;
+}
+.contacts__text {
+  text-align: center;
+  margin: 0px 0px 41px 0px;
+}
