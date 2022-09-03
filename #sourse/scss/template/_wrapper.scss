@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   font-family: "Inter";
   font-weight: 300;
   font-size: 20px;
@@ -35,4 +36,8 @@ body {
     background-color: #ac937d;
     transform: translate(-50%, 0%);
   }
+}
+
+.main {
+  flex: 1 1 auto;
 }
