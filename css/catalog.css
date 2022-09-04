@@ -391,3 +391,64 @@ body {
 .info__link {
   color: #fff;
 }
+
+/*--- Filter ------------------------------------------------------------------------*/
+.filter__body {
+  width: 278px;
+}
+.section-filter__title {
+  position: relative;
+  padding: 0px 0px 0px 18px;
+  margin: 0px 0px 34px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.section-filter__title:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(45deg);
+}
+.section-filter__title ._active {
+  transform: rotate(-135deg);
+}
+.checkbox {
+  position: relative;
+}
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+}
+.checkbox__text {
+  position: relative;
+  height: 25px;
+  padding: 0px 0px 0px 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 268%;
+  color: #000000;
+}
+.checkbox__text:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ac937d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
