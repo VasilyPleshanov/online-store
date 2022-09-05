@@ -103,69 +103,155 @@
                   <div class="section-filter__title">Тип</div>
                   <ul class="section-filter__body">
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Новинки</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>SALE</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Блузки и рубашки</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Спортивная одежда</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Юбки</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Футболки и топы</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Пиджаки и жакеты</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Худи и джемперы</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Куртки</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Шорты</span></span>
                       </label>
                     </li>
                     <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox" for="" >
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
                         <span class="checkbox__text"><span>Брюки</span></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__section section-filter">
+                  <div class="section-filter__title">Цена</div>
+                  <div class="section-filter__price">
+                    <div class="section-filter__display">
+                      <input class="section-filter__input section-filter__input_min" type="number" min="3000" max="20000" value="3000" disabled>
+                      <div class="section-filter__dash"></div>
+                      <input class="section-filter__input section-filter__input_max" type="number" min="3000" max="20000" value="20000" disabled>
+                    </div>
+                    <div class="section-filter__range range">
+                      <div class="range__progress"></div>
+                      <input class="range__input range__input_min" id="range-l" type="range" min="3000" max="20000" value="3000">
+                      <input class="range__input range__input_max" id="range-r" type="range" min="3000" max="20000" value="20000">
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__section section-filter">
+                  <div class="section-filter__title">Цвет</div>
+                  <ul class="section-filter__body">
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Все</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Белый</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Черный</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Серый</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Голубой</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Синий</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Бежевый</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Розовый</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Зелёный</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Красный</span></span>
+                      </label>
+                    </li>
+                    <li class="section-filter__item">
+                      <label class="section-filter__checkbox checkbox">
+                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                        <span class="checkbox__text"><span>Коричневый</span></span>
                       </label>
                     </li>
                   </ul>
@@ -224,5 +310,7 @@
         </footer>
         <!-- Footer End ------------------------------------------------------------------->
     </div>
+    <script src="js/spoiler.js"></script>
+    <script src="js/range.js"></script>
 </body>
 </html>
