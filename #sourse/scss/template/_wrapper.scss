@@ -11,11 +11,12 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
-._container {
-  max-width: 1686px;
-  padding: 0px 15px;
-  margin: 0 auto;
+
+.main {
+  flex: 1 1 auto;
 }
+
+// Technical classes
 ._title {
   position: relative;
 
@@ -38,6 +39,46 @@ body {
   }
 }
 
-.main {
-  flex: 1 1 auto;
+._btn {
+  display: block;
+  padding: 5.5px 84.5px;
+  border: 2px solid #000;
+  transition: all ease 400ms;
+
+  & span {
+    display: block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 268%;
+    text-align: center;
+    color: #000000;
+  }
+
+  &:not(:last-child) {
+    margin: 0px 0px 16px 0px;
+  }
+
+  &:hover {
+    background-color: #000;
+    & span {
+      color: #fff;
+    }
+  }
+}
+
+._btn-props {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 268%;
+  text-align: center;
+  color: #000000;
+  background: none;
+
+  &:hover {
+    color: #ac937d;
+    text-decoration: underline;
+  }
 }

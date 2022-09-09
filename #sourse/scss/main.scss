@@ -1,23 +1,171 @@
-/* --- Fonts ----------------------------------------------------------------------- */
+// --- Fonts -----------------------------------------------------------------------
 @import "fonts.scss";
 
-/* --- Reset browser styles --------------------------------------------------------- */
+// --- Reset browser styles --------------------------------------------------------
 @import "nullstyle.scss";
 
-/* ---Wrapper & Container----------------------------------------------------------- */
-@import "template/_wrapper.scss";
+// ---Wrapper & Container-----------------------------------------------------------
+// @import "template/_wrapper.scss";
 
-/*--- Header ------------------------------------------------------------------------*/
+// --- Header ----------------------------------------------------------------------
 @import "template/_header.scss";
 
-/*--- Gallery ---------------------------------------------------------------------*/
+// --- Gallery ---------------------------------------------------------------------
 @import "template/_gallery.scss";
 
-/*--- Card ------------------------------------------------------------------------*/
+// --- Card ------------------------------------------------------------------------
 @import "template/_card.scss";
 
-/*--- Footer ------------------------------------------------------------------------*/
+// --- Footer ----------------------------------------------------------------------
 @import "template/_footer.scss";
+
+// Variables
+// $md1: 1400;
+// $md2: 1087;
+// $md3: 991.98;
+// $md4: 767.98;
+// $md5: 479.98;
+
+// ---Checkpoints-----------------------------------------------------------------
+// DESKTOP
+// @media (max-width: $md1+px) {
+// }
+// // LAPTOP
+// @media (max-width: $md2+px) {
+// }
+// // TABLET
+// @media (max-width: $md3+px) {
+// }
+// // MOBILE
+// @media (max-width: $md4+px) {
+// }
+// // MOBILE SMALL
+// @media (max-width: $md5+px) {
+// }
+
+// DESKTOP
+@media (max-width: 1400px) {
+}
+// LAPTOP
+@media (max-width: 1087px) {
+}
+// TABLET
+@media (max-width: 991.98px) {
+}
+// MOBILE
+@media (max-width: 767.98px) {
+}
+// MOBILE SMALL
+@media (max-width: 479.98px) {
+}
+
+// ---------------------------------------------------------------------------------
+body {
+  height: 100%;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000;
+
+  &._lock {
+    overflow: hidden; // для скрытия body когда открываем бургер
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1716px; // 1676 (width container) + 40 (padding)
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+// MOBILE SMALL
+@media (max-width: 479.98px) {
+  ._container {
+    max-width: 1696px; // 1676 (width container) + 20 (padding)
+    padding: 0px 10px;
+    margin: 0 auto;
+  }
+}
+
+// Technical classes
+._title {
+  position: relative;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 0.8;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    width: 45px;
+    height: 3px;
+    background-color: #ac937d;
+    transform: translate(-50%, 0%);
+  }
+}
+
+._btn {
+  display: block;
+  padding: 5.5px 84.5px;
+  border: 2px solid #000;
+  transition: all ease 400ms;
+
+  & span {
+    display: block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 268%;
+    text-align: center;
+    color: #000000;
+  }
+
+  &:not(:last-child) {
+    margin: 0px 0px 16px 0px;
+  }
+
+  &:hover {
+    background-color: #000;
+    & span {
+      color: #fff;
+    }
+  }
+}
+
+._btn-props {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 268%;
+  text-align: center;
+  color: #000000;
+  background: none;
+
+  &:hover {
+    color: #ac937d;
+    text-decoration: underline;
+  }
+}
+
+// ---Page----------------------------------------------------------------------------
+.page {
+  flex: 1 1 auto;
+}
 
 /*--- Slider ------------------------------------------------------------------------*/
 .slider {

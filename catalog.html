@@ -95,176 +95,676 @@
         </header>
         <!-- Header End --------------------------------------------------------------------------->
         <main class="main">
-          <!-- Filter -------------------------------------------------------------------------------->
-          <section class="filter">
-            <div class="filter__container _container">
+          <div class="main__container _container">
+            <!-- Filter -------------------------------------------------------------------------------->
+            <section class="filter">
               <div class="filter__body">
-                <div class="filter__section section-filter">
-                  <div class="section-filter__title">Тип</div>
-                  <ul class="section-filter__body">
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Новинки</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>SALE</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Блузки и рубашки</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Спортивная одежда</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Юбки</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Футболки и топы</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Пиджаки и жакеты</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Худи и джемперы</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Куртки</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Шорты</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Брюки</span></span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filter__section section-filter">
-                  <div class="section-filter__title">Цена</div>
-                  <div class="section-filter__price">
-                    <div class="section-filter__display">
-                      <input class="section-filter__input section-filter__input_min" type="number" min="3000" max="20000" value="3000" disabled>
-                      <div class="section-filter__dash"></div>
-                      <input class="section-filter__input section-filter__input_max" type="number" min="3000" max="20000" value="20000" disabled>
-                    </div>
-                    <div class="section-filter__range range">
-                      <div class="range__progress"></div>
-                      <input class="range__input range__input_min" id="range-l" type="range" min="3000" max="20000" value="3000">
-                      <input class="range__input range__input_max" id="range-r" type="range" min="3000" max="20000" value="20000">
+                  <div class="filter__section section-filter">
+                    <div class="section-filter__title">Тип</div>
+                    <ul class="section-filter__body">
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Новинки</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>SALE</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Блузки и рубашки</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Спортивная одежда</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Юбки</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Футболки и топы</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Пиджаки и жакеты</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Худи и джемперы</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Куртки</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Шорты</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Брюки</span></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filter__section section-filter">
+                    <div class="section-filter__title">Цена</div>
+                    <div class="section-filter__price">
+                      <div class="section-filter__display">
+                        <input class="section-filter__input" id="input-1" type="text" min="3000" max="20000" value="3000">
+                        <div class="section-filter__dash"></div>
+                        <input class="section-filter__input" id="input-2" type="text" min="3000" max="20000" value="20000">
+                      </div>
+                      <div class="section-filter__range range">
+                        <div class="range__progress"></div>
+                        <input class="range__input" id="range-1" type="range" min="3000" max="20000" value="3000">
+                        <input class="range__input" id="range-2" type="range" min="3000" max="20000" value="20000">
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="filter__section section-filter">
-                  <div class="section-filter__title">Цвет</div>
-                  <ul class="section-filter__body">
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Все</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Белый</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Черный</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Серый</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Голубой</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Синий</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Бежевый</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Розовый</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Зелёный</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Красный</span></span>
-                      </label>
-                    </li>
-                    <li class="section-filter__item">
-                      <label class="section-filter__checkbox checkbox">
-                        <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
-                        <span class="checkbox__text"><span>Коричневый</span></span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+                  <div class="filter__section section-filter">
+                    <div class="section-filter__title">Цвет</div>
+                    <ul class="section-filter__body">
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Все</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Белый</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Черный</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Серый</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Голубой</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Синий</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Бежевый</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Розовый</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Зелёный</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Красный</span></span>
+                        </label>
+                      </li>
+                      <li class="section-filter__item">
+                        <label class="section-filter__checkbox checkbox">
+                          <input class="checkbox__input" type="checkbox" value="1" data-error="Ошибка" name="form[]">
+                          <span class="checkbox__text"><span>Коричневый</span></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filter__section section-filter">
+                    <div class="section-filter__buttons">
+                      <a href="" class="section-filter__btn _btn"><span>Применить</span></a>
+                      <a href="" class="section-filter__btn _btn"><span>Сбросить</span></a>
+                    </div>
+                  </div>
               </div>
-            </div>
-          </section>
-          <!-- Filter End ---------------------------------------------------------------------------->
-          <!-- Catalog ----------------------------------------------------------------------------->
-          <section class="catalog">
+            </section>
+            <!-- Filter End ---------------------------------------------------------------------------->
+            <!-- Catalog ----------------------------------------------------------------------------->
+            <section class="catalog">
+              <div class="catalog__grid">
+                <h2 class="catalog__title">Новинки</h2>
+                  <div class="catalog__select catalog-select">
+                    <p class="catalog-select__text">Сортировать по</p>
+                    <select name="" id="" class="catalog-select__body">
+                      <option value="">убыванию цены</option>
+                      <option value="">возрастанию цены</option>
+                      <option value="">размер скидки</option>
+                    </select>
+                  </div>
+                  <div class="catalog__body">
+                    <ul class="catalog__list">
 
-          </section>
-          <!-- Catalog End ------------------------------------------------------------------------->
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/5.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Джемпер <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">8 000 &#8381;</p>
+                            <p class="card__price-old">9 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/1.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Футболка <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">6 000 &#8381;</p>
+                            <p class="card__price-old">7 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/6.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Джинсы <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">8 000 &#8381;</p>
+                            <p class="card__price-old">9 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/8.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Шорты <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/5.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Брюки <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">9 000 &#8381;</p>
+                            <p class="card__price-old">10 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/2.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Рубашка <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/7.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Жилет <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">5 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/8.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Шорты <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Топ <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">5 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Худи с капюшоном <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Худи с капюшоном <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/4.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">
+                            Футболка-боди <span>sousshoes</span>
+                          </p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/5.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Джемпер <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">8 000 &#8381;</p>
+                            <p class="card__price-old">9 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/1.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Футболка <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">6 000 &#8381;</p>
+                            <p class="card__price-old">7 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/6.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Джинсы <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">8 000 &#8381;</p>
+                            <p class="card__price-old">9 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/8.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Шорты <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/5.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Брюки <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">9 000 &#8381;</p>
+                            <p class="card__price-old">10 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/2.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Рубашка <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/7.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Жилет <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">5 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/8.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Шорты <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Топ <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">5 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Худи с капюшоном <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/3.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">Худи с капюшоном <span>sousshoes</span></p>
+                          <div class="card__price">
+                            <p class="card__price-actual">3 000 &#8381;</p>
+                            <p class="card__price-old">4 000 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="catalog__item">
+                        <div class="card">
+                          <div class="card__stickers">
+                            <p>новинка</p>
+                            <p>хит</p>
+                          </div>
+                          <div class="card__image">
+                            <img src="img/novelties/4.png" alt="" />
+                          </div>
+                          <p class="card__discount">-10%</p>
+                          <p class="card__text">
+                            Футболка-боди <span>sousshoes</span>
+                          </p>
+                          <div class="card__price">
+                            <p class="card__price-actual">4 000 &#8381;</p>
+                            <p class="card__price-old">4 500 &#8381;</p>
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="catalog__props catalog-props">
+                    <div class="catalog-props__item">
+                      <button class="catalog-props__btn _btn">
+                        <span>Показать ещё</span>
+                      </button>
+                    </div>
+                    <div class="catalog-props__item">
+                      <div class="catalog-props__pages pages">
+                        <button class="pages__btn _btn-props">&#8249;</button>
+                        <ul class="pages__list">
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">1</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">2</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">3</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">4</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">5</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">6</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">7</button>
+                          </li>
+                          <li class="pages__item">
+                            <button class="pages__number-btn _btn-props">8</button>
+                          </li>
+                        </ul>
+                        <button class="pages__btn _btn-props">&#8250;</button>
+                      </div>
+                    </div>
+                    <div class="catalog-props__item">
+                      <div class="catalog-props__display">
+                        <span>Показано</span>
+                        <div class="catalog-props__counter">
+                          <span>25 / 200</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <!-- Catalog End ------------------------------------------------------------------------->
+          </div>
         </main>
         <!-- Footer ------------------------------------------------------------------->
         <footer class="footer">

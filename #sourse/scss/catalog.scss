@@ -16,10 +16,25 @@
 /*--- Footer ------------------------------------------------------------------------*/
 @import "template/_footer.scss";
 
+/*--- Main ------------------------------------------------------------------------*/
+.main {
+  &__container {
+    display: flex;
+  }
+}
+
+/*--- Header ------------------------------------------------------------------------*/
+.header {
+  margin: 0px 0px 103px 0px;
+  &__container {
+  }
+}
+
 /*--- Filter ------------------------------------------------------------------------*/
 .filter {
+  user-select: none;
   &__body {
-    width: 278px;
+    flex: 0 0 278px;
   }
   &__section {
   }
@@ -84,9 +99,20 @@
   }
 
   &__display {
+    display: flex;
   }
 
   &__input {
+    width: 101px;
+    height: 44px;
+    padding: 0px 0px 0px 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #000;
+
     &_min {
     }
 
@@ -95,9 +121,26 @@
   }
 
   &__dash {
+    position: relative;
+    width: 46px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 14px;
+      background-color: #000;
+    }
   }
 
   &__range {
+  }
+
+  &__buttons {
   }
 }
 .checkbox {
@@ -152,17 +195,18 @@
 
 .range {
   position: relative;
-  width: 277px;
+  width: 100%;
+  height: 26px;
+  margin-top: 35px;
 
   &__progress {
     width: 100%;
-    height: 5px;
-    background-color: #ddd;
+    height: 2px;
+    background-color: #d5d5d5;
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
-    border-radius: 5px;
   }
 
   &__input {
@@ -181,13 +225,7 @@
 
   &__input::-webkit-slider-runnable-track {
     -webkit-appearance: none;
-    height: 5px;
-
-    &_min {
-    }
-
-    &_max {
-    }
+    height: 2px;
   }
 
   &__input::-moz-range-track {
@@ -202,35 +240,157 @@
 
   &__input::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    background-color: red;
+    height: 26px;
+    width: 26px;
+    border: 4px solid #ac937d;
+    border-radius: 50%;
+    background-color: #fff;
     cursor: pointer;
-    border-radius: 10px;
+    margin-top: -12px;
     pointer-events: auto;
-    margin-top: -9px;
   }
 
   &__input::-moz-range-thumb {
     -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    background-color: red;
-    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    border: 4px solid #ac937d;
     border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: -12px;
     pointer-events: auto;
   }
 
   &__input::-ms-thumb {
-    appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    background-color: red;
-    cursor: pointer;
+    -webkit-appearance: none;
+    height: 26px;
+    width: 26px;
+    border: 4px solid #ac937d;
     border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: -12px;
     pointer-events: auto;
+  }
+
+  &__input:active::-webkit-slider-thumb {
+    background-color: #ac937d;
   }
 }
 
 .catalog {
+  flex: 1 1 auto;
+  margin: 0px 0px 87px 20px;
+
+  &__title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  &__select {
+  }
+
+  &__body {
+    flex: 1 1 auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0px 10px 35px 0px;
+  }
+
+  &__props {
+  }
+}
+.catalog-select {
+  display: flex;
+  &__text {
+    display: block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    color: #111111;
+  }
+  &__body {
+    text-decoration-line: underline;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #111111;
+
+    & option {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #111111;
+    }
+  }
+}
+
+.catalog-props {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+  }
+
+  &__btn {
+    background: none;
+  }
+
+  &__pages {
+  }
+
+  &__display {
+    display: flex;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #111111;
+
+    & span {
+      margin: 0px 5px 0px 0px;
+    }
+  }
+
+  &__counter {
+  }
+}
+.pages {
+  display: flex;
+  &__btn {
+  }
+  &__list {
+    display: flex;
+    margin: 0px 41px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 37px 0px 0px;
+    }
+  }
+
+  &__number-btn {
+  }
 }
