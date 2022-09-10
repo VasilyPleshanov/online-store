@@ -21,6 +21,7 @@
     }
   }
 }
+
 // --------------------------------------------------------------------
 .top-header {
   background-color: #ac947d;
@@ -117,6 +118,11 @@
     }
   }
 
+  &__navbar {
+    flex: 0 1 200px;
+    justify-content: flex-end;
+  }
+
   &__button {
     display: none;
     flex: 0 0 33px;
@@ -124,18 +130,24 @@
 
   &__burger {
   }
-
-  &__navbar {
-    flex: 0 1 200px;
-    justify-content: flex-end;
-  }
 }
 
 // TABLET
 @media (max-width: 991.98px) {
   .middle-header {
+    height: 124px;
+    align-items: center;
+    padding: 0px;
+
+    &__navbar {
+      flex: 0 1 auto;
+      justify-content: flex-end;
+    }
+
     &__button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
@@ -143,8 +155,6 @@
 // MOBILE SMALL
 @media (max-width: 479.98px) {
   .middle-header {
-    align-items: center;
-    justify-content: center;
 
     &__logo {
       & p {
@@ -156,13 +166,6 @@
     &__navbar {
       flex: 0 1 100px;
       justify-content: center;
-    }
-
-    &__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      // flex: 0 0 33px;
     }
   }
 }
@@ -219,12 +222,12 @@
   }
 }
 
-// MOBILE SMALL
-@media (max-width: 479.98px) {
+// TABLET
+@media (max-width: 991.98px) {
   .navbar-header {
     align-items: center;
     height: 21px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     &__icon {
       display: flex;
       align-items: center;
@@ -238,8 +241,8 @@
 
 // -----------------------------------------------------------------------------
 .burger {
-  width: 33px;
-  height: 20px;
+  width: 34px; // 30
+  height: 23px; // 20
   position: relative;
   background: none;
   cursor: pointer;
@@ -249,7 +252,7 @@
   span::after,
   span::before {
     display: block;
-    height: 4px;
+    height: 2px; //4
     width: 100%;
     left: 0;
     position: absolute;
@@ -259,13 +262,13 @@
 
   & span::before {
     content: "";
-    top: -8px;
+    top: -11px; // 8
     transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   & span::after {
     content: "";
-    top: 8px;
+    top: 11px; // 8
     transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
@@ -294,6 +297,7 @@
   }
 }
 
+// --------------------------------------------------------------------------
 .bottom-header {
   margin: 0px 0px 39px 0px;
 }
