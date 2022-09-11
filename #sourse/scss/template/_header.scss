@@ -9,6 +9,9 @@
     margin: 0 auto;
     padding: 0px 20px;
   }
+
+  &__mobile-menu {
+  }
 }
 
 // MOBILE SMALL
@@ -352,5 +355,150 @@
     &__item:not(:last-child) {
       margin: 0px 25px 0px 0px;
     }
+  }
+}
+
+// -------------------------------------------------------------------
+.mobile-menu {
+  display: none;
+  color: #000;
+
+  &._active .mobile-menu__body {
+    left: 0;
+  }
+    
+  &__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+    transition: left .3s ease 0s;
+  }
+
+  &__title {
+    margin: 28px 0px 58px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    & span {
+      color: #AC937D;
+    }
+  }
+
+  &__list {
+    flex: 1 1 auto;
+  }
+
+  &__item {
+    height: 47px;
+    border-top: 2px solid #000000;
+
+    &:last-child {
+      border-bottom: 2px solid #000000;
+    }
+
+    &:last-child .mobile-menu__link {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__text {
+    margin: 0px 0px 0px 21px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+  }
+
+  &__img {
+    margin: 0px 23px 0px 0px;
+  }
+
+  &__form {
+  }
+}
+
+// TABLET
+@media (max-width: 991.98px) {
+  .mobile-menu {
+    display: block;
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__form {
+    }
+  }
+}
+
+// --------------------------------------------------------
+.form-mobile {
+  height: 92px;
+  padding: 6px 9px;
+  background-color: #AC937D;
+
+  &__text {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: none;
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__label {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: none;
+  }
+
+  &__input {
+    height: 40px;
+    flex: 1 0 281px;
+    background-color: transparent;
+  }
+
+  &__btn {
+    flex: 0 0 21px;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
   }
 }

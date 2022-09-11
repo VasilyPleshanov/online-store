@@ -190,7 +190,6 @@ body {
   margin: 0 auto;
   padding: 0px 20px;
 }
-
 @media (max-width: 479.98px) {
   .header__container {
     max-width: 1850px;
@@ -544,6 +543,137 @@ body {
     margin: 0px 25px 0px 0px;
   }
 }
+.mobile-menu {
+  display: none;
+  color: #000;
+}
+.mobile-menu._active .mobile-menu__body {
+  left: 0;
+}
+.mobile-menu__body {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  -webkit-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+}
+.mobile-menu__title {
+  margin: 28px 0px 58px 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.mobile-menu__title span {
+  color: #AC937D;
+}
+.mobile-menu__list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.mobile-menu__item {
+  height: 47px;
+  border-top: 2px solid #000000;
+}
+.mobile-menu__item:last-child {
+  border-bottom: 2px solid #000000;
+}
+.mobile-menu__item:last-child .mobile-menu__link {
+  font-size: 12px;
+  line-height: 15px;
+}
+.mobile-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.mobile-menu__text {
+  margin: 0px 0px 0px 21px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000;
+}
+.mobile-menu__img {
+  margin: 0px 23px 0px 0px;
+}
+@media (max-width: 991.98px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+.form-mobile {
+  height: 92px;
+  padding: 6px 9px;
+  background-color: #AC937D;
+}
+.form-mobile__text {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: none;
+}
+.form-mobile__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #fff;
+}
+.form-mobile__label {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: none;
+}
+.form-mobile__input {
+  height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 281px;
+          flex: 1 0 281px;
+  background-color: transparent;
+}
+.form-mobile__btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 21px;
+          flex: 0 0 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: #fff;
+  font-size: 20px;
+  background-color: transparent;
+}
+
 /*--- Card ------------------------------------------------------------------------*/
 .card {
   position: relative;
