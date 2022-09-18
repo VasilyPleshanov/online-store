@@ -79,28 +79,28 @@ function slider() {
   let xDown = null;
 
   function getTouches(evt) {
-  return evt.touches
+    return evt.touches
   };
 
   function handleTouchStart(evt) {
     interval();
-  const firstTouch = getTouches(evt)[0];
-  xDown = firstTouch.clientX;
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
   };
 
   function handleTouchMove(evt) {
     interval();
-  if ( ! xDown ) {
-  return;
-  }
+    if ( ! xDown ) {
+      return;
+    }
 
-  let xUp = evt.touches[0].clientX;
+    let xUp = evt.touches[0].clientX;
 
-  let xDiff = xDown - xUp;
+    let xDiff = xDown - xUp;
 
-  ( xDiff > 0 ) ? prevSlide() : nextSlide();
+    (xDiff > 0) ? prevSlide() : nextSlide();
 
-  xDown = null;
+    xDown = null;
   }
 
 // Auto next

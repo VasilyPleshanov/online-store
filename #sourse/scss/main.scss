@@ -125,33 +125,46 @@ body {
   }
 }
 
-._btn {
-  display: block;
-  padding: 5.5px 84.5px;
-  border: 2px solid #000;
-  transition: all ease 400ms;
-
-  & span {
-    display: block;
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 268%;
-    text-align: center;
-    color: #000000;
-  }
-
-  &:not(:last-child) {
-    margin: 0px 0px 16px 0px;
-  }
-
-  &:hover {
-    background-color: #000;
-    & span {
-      color: #fff;
-    }
+// MOBILE SMALL
+@media (max-width: 479.98px) {
+  ._title {
+    font-size: 14px;
   }
 }
+
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+// ._btn {
+//   display: block;
+//   padding: 5.5px 84.5px;
+//   border: 2px solid #000;
+//   transition: all ease 400ms;
+
+//   & span {
+//     display: block;
+//     font-family: "Inter";
+//     font-weight: 500;
+//     font-size: 15px;
+//     line-height: 268%;
+//     text-align: center;
+//     color: #000000;
+//   }
+
+//   &:not(:last-child) {
+//     margin: 0px 0px 16px 0px;
+//   }
+
+//   &:hover {
+//     background-color: #000;
+//     & span {
+//       color: #fff;
+//     }
+//   }
+// }
 
 ._btn-props {
   font-family: "Inter";
@@ -169,7 +182,7 @@ body {
   }
 }
 
-// ---Header-------------------------------------------------------------------------
+// --- Header -------------------------------------------------------------------------
 
 // TABLET
 @media (max-width: 991.98px) {
@@ -178,12 +191,12 @@ body {
   }
 }
 
-// ---Page----------------------------------------------------------------------------
+// --- Page ----------------------------------------------------------------------------
 .page {
   flex: 1 1 auto;
 }
 
-/*--- Slider ------------------------------------------------------------------------*/
+// --- Slider ----------------------------------------------------------------------------
 .slider {
   height: 41.9vw;
   max-width: 100%;
@@ -198,7 +211,6 @@ body {
 
   &__item {
     position: relative;
-    display: block;
     display: none;
     animation-name: fade;
     animation-duration: 1s;
@@ -231,9 +243,17 @@ body {
     background-color: #000;
 
     &_second {
+      position: absolute;
       top: 56.65%;
-      left: 73.85%;
+      right: 5.46%;
+      display: block;
       padding: 1.04% 5.63%;
+      color: #fff;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.2;
+      background-color: #000;
     }
   }
 
@@ -249,11 +269,53 @@ body {
   }
 }
 
+// PC
+@media (max-width: 1400px) {
+  .slider {
+    &__link {
+      font-size: 18px;
+
+      &_second {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// LAPTOP
+@media (max-width: 1087px) {
+  .slider {
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
+
 // TABLET
 @media (max-width: 991.98px) {
   .slider {
+    margin: 0px 0px 61px 0px;
+
     &__container {
       padding: 0px 10px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: 767.98px) {
+  .slider {
+    &__link {
+      display: none;
+
+      &_second {
+        display: none;
+      }
     }
   }
 }
@@ -278,91 +340,48 @@ body {
   }
 }
 
-.dots-slider {
-  height: 12px;
-  bottom: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-
-  display: none;
-
-  &__dot {
-    display: block;
-    height: 2px;
-    width: 10.66%;
-    cursor: pointer;
-    border-radius: 2px;
-    background-color: #000;
-    transition: background-color 0.6s ease;
-  }
-
-  &__dot:not(:last-child) {
-    margin: 0px 12px 0px 0px;
-  }
-
-  &__dot.active {
-    background-color: #ac937d;
-  }
-}
-
-/* PC */
-@media (max-width: 1400px) {
-  .slider {
-    &__link {
-      font-size: 18px;
-
-      &_lookbook {
-        padding: 0.86% 2.08%;
-      }
-    }
-  }
-}
-
-/* LAPTOP */
-@media (max-width: 1087px) {
-  .slider {
-    &__link {
-      font-size: 16px;
-    }
-  }
-}
-
-/* TABLET */
+// TABLET
 @media (max-width: 991.98px) {
-  .slider {
-    &__link {
-      position: absolute;
-      font-size: 20px;
-      line-height: 1.2;
-
-      &_lookbook {
-        top: 65%;
-        left: 5%;
-        padding: 1.5% 4.16%;
-        background-color: #ac937d;
-      }
-    }
-  }
   .nav-slider {
     display: none;
   }
-
-  .dots-slider {
-    display: flex;
-  }
 }
 
-/* MOBILE */
-@media (max-width: 767.98px) {
-  .slider {
-    &__link {
-      display: none;
+.dots-slider {
+  display: none;
+}
+
+// TABLET
+@media (max-width: 991.98px) {
+  .dots-slider {
+    height: 12px;
+    bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+
+    &__dot {
+      display: block;
+      height: 2px;
+      width: 10.66%;
+      cursor: pointer;
+      border-radius: 2px;
+      background-color: #000;
+      transition: background-color 0.6s ease;
+    }
+
+    &__dot:not(:last-child) {
+      margin: 0px 12px 0px 0px;
+    }
+
+    &__dot.active {
+      background-color: #ac937d;
     }
   }
 }
-/*--- Platform ------------------------------------------------------------------------*/
+
+// --- Platform ----------------------------------------------------------------------------
 .platform {
   margin: 0px 0px 139px 0px;
 
@@ -370,13 +389,14 @@ body {
     margin: 0px 0px 63px 0px;
   }
 }
-.small-slider {
+.platform-slider {
   display: grid;
-  grid-template-columns: 55px 1fr 55px;
+  grid-template-columns: 45px 1fr 45px;
   grid-template-rows: 141px;
   align-items: center;
 
   &__body {
+    margin: 0px 10px;
     overflow: hidden;
   }
 
@@ -390,7 +410,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 70px;
+    // padding: 0px 70px;
+    padding: 0px 3.64%;
   }
 
   &__link {
@@ -398,6 +419,38 @@ body {
       max-width: 100%;
     }
   }
+}
+
+// DESKTOP
+@media (max-width: 1400px) {
+}
+// LAPTOP
+@media (max-width: 1087px) {
+  .platform-slider {
+  }
+}
+// TABLET
+@media (max-width: 991.98px) {
+  .platform-slider {
+    grid-template-columns: 1fr;
+
+    &__body {
+    }
+
+    &__item {
+      // padding: 0px 50px;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+// MOBILE
+@media (max-width: 767.98px) {
+}
+// MOBILE SMALL
+@media (max-width: 479.98px) {
 }
 
 /*--- Product ------------------------------------------------------------------------*/
