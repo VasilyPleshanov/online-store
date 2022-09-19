@@ -1,4 +1,4 @@
-.gallery {
+.cards-slider {
   display: grid;
   grid-template-columns: 45px 1fr 45px;
   grid-template-rows: 524px;
@@ -21,4 +21,23 @@
     justify-content: center;
     padding: 0px 26.75px;
   }
+}
+
+// DESKTOP
+@media (max-width: 1400px) {
+}
+// LAPTOP
+@media (max-width: 1087px) {
+}
+// TABLET
+@media (max-width: 991.98px) {
+  .cards-slider {
+    grid-template-columns: 1fr;
+  }
+}
+// MOBILE
+@media (max-width: 767.98px) {
+}
+// MOBILE SMALL
+@media (max-width: 479.98px) {
 }

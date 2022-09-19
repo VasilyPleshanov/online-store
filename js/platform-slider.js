@@ -11,9 +11,12 @@ function platformSlider() {
   function init() {
     width = sliderBody.offsetWidth;
 
-    console.log(sliderBody);
+    console.log(width);
+    console.log(items.length);
 
-    if (width < 850) {
+    if (width < 440) {
+      sliderLine.style.width = width * items.length / 1 + 'px';
+    } else if (width < 850) {
       sliderLine.style.width = width * items.length / 2 + 'px';
     } else {
       sliderLine.style.width = width * items.length / 3 + 'px';
@@ -21,7 +24,9 @@ function platformSlider() {
     
     items.forEach(item => {
 
-      if (width < 850) {
+      if (width < 440) {
+        item.style.width = width / 1 + 'px';
+      } else if (width < 850) {
         item.style.width = width / 2 + 'px';
       } else {
         item.style.width = width / 3 + 'px';
@@ -42,29 +47,53 @@ function platformSlider() {
 
   function slideNext() {
     count++;
-    if (count >= items.length - 2) {
-      count = 0;
+
+    if (width < 440) {
+      if (count >= items.length) {
+        count = 0;
+      }
+    } else if (width < 850) {
+      if (count >= items.length - 1) {
+        count = 0;
+      }
+    } else {
+      if (count >= items.length - 2) {
+        count = 0;
+      }
     }
+    
     rollSlider();
   }
 
   function slidePrev() {
     count--;
-    if (count < 0) {
-      count = items.length - 3;
+
+    if (width < 440) {
+      if (count < 0) {
+        count = items.length - 1;
+      }
+    } else if (width < 850) {
+      if (count < 0) {
+        count = items.length - 2;
+      }
+    } else {
+      if (count < 0) {
+        count = items.length - 3;
+      }
     }
+
     rollSlider();
   }
 
   function rollSlider() {
-    if (width < 850) {
+    if (width < 440) {
+      sliderLine.style.transform = 'translate(-'+ count * width / 1 +'px)';
+    } else if (width < 850) {
       sliderLine.style.transform = 'translate(-'+ count * width / 2 +'px)';
     } else {
       sliderLine.style.transform = 'translate(-'+ count * width / 3 +'px)';
     }
   }
-
-  console.log(sliderBody);
 
   // Swipe
   sliderBody.addEventListener('touchstart', handleTouchStart, false);

@@ -1,14 +1,16 @@
-gallery();
+cardsSlider();
 
-function gallery() {
-  const items = document.querySelectorAll('.gallery__item');
-  const sliderLine = document.querySelector('.gallery__list');
+function cardsSlider() {
+  const items = document.querySelectorAll('.cards-slider__item');
+  const sliderLine = document.querySelector('.cards-slider__list');
   let count = 0;
   let width;
 
   function init() {
-    width = document.querySelector('.gallery__body').offsetWidth;
-    if (width < 850) {
+    width = document.querySelector('.cards-slider__body').offsetWidth;
+    if (width < 440) {
+      sliderLine.style.width = width * items.length / 1 + 'px';
+    } else if (width < 850) {
       sliderLine.style.width = width * items.length / 2 + 'px';
     } else if (width < 1384) {
       sliderLine.style.width = width * items.length / 3 + 'px';
@@ -34,7 +36,7 @@ function gallery() {
   window.addEventListener('resize', init);
   init();
 
-  document.querySelector('.gallery__btn_prev').addEventListener('click', function() {
+  document.querySelector('.cards-slider__btn_prev').addEventListener('click', function() {
     count--;
     if (count < 0) {
       count = items.length - 4;
@@ -42,7 +44,7 @@ function gallery() {
     rollSlider();
   })
 
-  document.querySelector('.gallery__btn_next').addEventListener('click', function() {
+  document.querySelector('.cards-slider__btn_next').addEventListener('click', function() {
     count++;
     if (count >= items.length - 3) {
       count = 0;
