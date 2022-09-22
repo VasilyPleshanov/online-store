@@ -397,12 +397,15 @@ body {
   }
 }
 .platform-slider {
-  display: grid;
-  grid-template-columns: 45px 1fr 45px;
-  grid-template-rows: 141px;
-  align-items: center;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    grid-template-rows: 141px;
+    align-items: center;
+  }
 
   &__body {
+    flex: 1 1 auto;
     margin: 0px 10px;
     overflow: hidden;
   }
@@ -425,6 +428,15 @@ body {
       max-width: 100%;
     }
   }
+
+  &__btn {
+    &._hide {
+      display: none;
+    }
+  }
+
+  &__dots {
+  }
 }
 
 // DESKTOP
@@ -432,16 +444,17 @@ body {
 }
 // LAPTOP
 @media (max-width: 1087px) {
-  .platform-slider {
-  }
 }
 // TABLET
 @media (max-width: 991.98px) {
   .platform {
-    margin: 0px 0px 37px 0px;
+    // margin: 0px 0px 37px 0px;
+    margin: 0px 0px 70px 0px;
   }
   .platform-slider {
-    grid-template-columns: 1fr;
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
 
     &__body {
     }
@@ -460,6 +473,27 @@ body {
 }
 // MOBILE SMALL
 @media (max-width: 479.98px) {
+}
+
+.dots-platform-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ac937d;
+  }
+
+  &__dot:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+  }
+
+  &__dot._active {
+    background-color: #000;
+  }
 }
 
 /*--- Product ------------------------------------------------------------------------*/

@@ -1,5 +1,3 @@
-slider();
-
 function slider() {
   const next = document.querySelector('.nav-slider__next');
   const prev = document.querySelector('.nav-slider__prev');
@@ -11,7 +9,7 @@ function slider() {
   let index = 0;
   let timer;
 
-  let lol;
+  let count;
 
   const activeSlide = n => {
     for (slide of slides) {
@@ -106,16 +104,17 @@ function slider() {
 // Auto next
   const interval = () => {
     
-    if (lol == 1) {
+    if (count == 1) {
       timer = clearInterval(timer);
-      lol = 0;
+      count = 0;
       interval();
     } else {
       timer = setInterval(nextSlide, 7000);
-      lol = 1;
+      count = 1;
     }
   }
 
   interval();
-
 }
+
+slider();
